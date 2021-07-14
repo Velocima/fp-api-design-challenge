@@ -1,6 +1,4 @@
-# fp-api-design-challenge
-
-Neighbourhood Colab API.
+# Neighbourhood Colab API
 
 Designed by:
 [Dan Cooper](https://github.com/danjcooper), [Jawwad Uddin](https://github.com/JawwadUddin), [Max Hartley](https://github.com/Velocima),

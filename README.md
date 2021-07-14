@@ -13,6 +13,10 @@ Api root `https://api.neighbourhoodcolab.com`
 
 ### People
 
+**The endpoints for making requests about people**
+
+---
+
 `GET /people/search`
 
 Returns and array of people based on search query parametres.
@@ -53,6 +57,10 @@ Query options:
 | api_key | api key for authenticating access | required to access API |
 
 ### Houses
+
+**The endpoints for making requests about Houses**
+
+---
 
 Returns all houses and their owners
 

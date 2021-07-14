@@ -1,8 +1,15 @@
 # fp-api-design-challenge
 
-Api root `https://api.neightbourhoodcolab.com`
+Neighbourhood Colab API.
+
+Designed by:
+[Dan Cooper](https://github.com/danjcooper), [Jawwad Uddin](https://github.com/JawwadUddin), [Max Harley](https://github.com/Velocima),
 
 ## Basic API info
+
+A quick and convenient way to access information about people and houses in your area.
+
+Api root `https://api.neighbourhoodcolab.com`
 
 ## API Endpoints
 
@@ -14,7 +21,7 @@ Returns and array of people based on search query parametres.
 
 By default returns all people.
 
-Example endpoint: `GET https://api.neightbourhoodcolab.com/people/search?api_key=my_key&min_age=22&max_occupants=5`
+Example endpoint: `GET https://api.neighbourhoodcolab.com/people/search?api_key=my_key&min_age=22&max_occupants=5`
 
 Query options:
 
@@ -33,7 +40,7 @@ Query options:
 
 Add a new person to the database
 
-Example endpoint: `POST https://api.neightbourhoodcolab.com/people?api_key=my_key`
+Example endpoint: `POST https://api.neighbourhoodcolab.com/people?api_key=my_key`
 
 requires body:
 
@@ -51,7 +58,7 @@ Query options:
 
 Returns all houses and their owners
 
-Example endpoint: `GET https://api.neightbourhoodcolab.com/houses?api_key=my_key`
+Example endpoint: `GET https://api.neighbourhoodcolab.com/houses?api_key=my_key`
 
 Query options:
 

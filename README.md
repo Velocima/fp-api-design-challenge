@@ -73,25 +73,23 @@ Query options:
 
 ## Database
 
+our data is stored in a relational database and the structure is outlined below.
+
 ### People Database
 
-- id
-- name
-- age
-- number_of_occupants
+| id     | name   | age    | number_of_occupants |
+| ------ | ------ | ------ | ------------------- |
+| number | string | number | number or null      |
+
 
 ### Owners Database
 
-- owner_id
-- house_id
+| owner_id | house_id |
+| -------- | -------- |
+| number   | number   |
 
 ### Address Database
 
-- id
-- house_number
-- house_name
-- address_line_1
-- address_line_2
-- address_line_3
-- county
-- postcode
+| id     | house_number   | house_name     | address_line_1 | address_line_2 | address_line_3 | county | postcode |
+| ------ | -------------- | -------------- | -------------- | -------------- | -------------- | ------ | -------- |
+| number | number or null | string or null | string         | string or null | string or null | string | string   |

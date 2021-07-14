@@ -8,9 +8,46 @@ Api root `https://api.neightbourhoodcolab.com`
 
 ### People
 
-### Houses
+`GET /people/search`
 
-`GET /houses`
+Returns and array of people based on search query parametres.
+
+By default returns all people.
+
+Example endpoint: `GET https://api.neightbourhoodcolab.com/people/search?api_key=my_key&min_age=22&max_occupants=5`
+
+Query options:
+
+| Query         | Description                                                   | Additional info                           |
+| ------------- | ------------------------------------------------------------- | ----------------------------------------- |
+| api_key       | Api key for authenticating access                             | Required to access API                    |
+| limit         | Limits the number of results                                  | Default: 50. If 0, will return all houses |
+| min_age       | Query based on minimum age                                    |                                           |
+| max_age       | Query based on maximum age                                    |                                           |
+| min_occupants | Query based on minimum number of occupants in their household |                                           |
+| max_occupants | Query based on maximum number of occupants in their household |                                           |
+
+---
+
+`POST /people`
+
+Add a new person to the database
+
+Example endpoint: `GET https://api.neightbourhoodcolab.com/people?api_key=my_key`
+
+requires body:
+
+- `string name`
+- `number numberOfOccupants`
+- `number age`
+
+Query options:
+
+| Query   | Description                       | Additional info        |
+| ------- | --------------------------------- | ---------------------- |
+| api_key | api key for authenticating access | required to access API |
+
+### Houses
 
 Returns all houses and their owners
 
@@ -33,7 +70,7 @@ Response
         "id": number unique id,
         "name": string,
         "age": number,
-        "number_of_occupants": number,
+        "numberOfOccupants": number,
       }
 			"house": {
         "id": number unique id,

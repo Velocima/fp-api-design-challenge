@@ -3,7 +3,7 @@
 Neighbourhood Colab API.
 
 Designed by:
-[Dan Cooper](https://github.com/danjcooper), [Jawwad Uddin](https://github.com/JawwadUddin), [Max Harley](https://github.com/Velocima),
+[Dan Cooper](https://github.com/danjcooper), [Jawwad Uddin](https://github.com/JawwadUddin), [Max Hartley](https://github.com/Velocima),
 
 ## Basic API info
 

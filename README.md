@@ -33,7 +33,7 @@ Query options:
 
 Add a new person to the database
 
-Example endpoint: `GET https://api.neightbourhoodcolab.com/people?api_key=my_key`
+Example endpoint: `POST https://api.neightbourhoodcolab.com/people?api_key=my_key`
 
 requires body:
 
@@ -117,7 +117,6 @@ our data is stored in a relational database and the structure is outlined below.
 | id     | name   | age    | number_of_occupants |
 | ------ | ------ | ------ | ------------------- |
 | number | string | number | number or null      |
-
 
 ### Owners Database
 
